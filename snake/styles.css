@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #99b11d;
+  gap: 10px;
+
+  font-size: 14pt;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+#game-board {
+  background: url(image/grass.jpg) no-repeat;
+  background-size: cover;
+  width: 80vmin;
+  height: 80vmin;
+  border: black solid 1px;
+  box-shadow: 5px 5px 16px #3f4b02;
+  border-radius: 6px;
+
+  display: grid;
+  grid-template-columns: repeat(21, auto);
+  grid-template-rows: repeat(21, auto);
+  padding: 5px;
+}
+
+.snake {
+  background-color: #0ecd0e;
+  background: url(image/snake-scale.jpg) no-repeat;
+  background-size: cover;
+  border: #006400 solid 1px;
+  border-radius: 4px;
+}
+
+.food {
+  background-color: #c33016;
+  border: #8e1904 solid 1 / px;
+  border-radius: 16px;
+}
